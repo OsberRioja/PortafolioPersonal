@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        /* Agrega estilos personalizados si es necesario */
+        body {
+            padding-top: 56px;
+        }
+
+        /* Centra verticalmente el contenido de la columna izquierda */
+        .center-vertical {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+
+        /* Centra la imagen en la columna derecha */
+        .center-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Mi Portafolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre Mí</a></li>
+                <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portafolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+                <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                <button id="cambiarTemaBtn" class="btn btn-light">Cambiar Tema</button>
+                <!-- Puedes agregar más secciones a la barra de navegación según sea necesario -->
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Sección de Inicio -->
+    <section id="inicio" class="container mt-5">
+        <h1>Bienvenido a Mi Portafolio</h1>
+        <!-- Puedes agregar más contenido según sea necesario -->
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="container mt-5">
+        <h2>Sobre Mí</h2>
+        <div class="row">
+            <!-- Columna Izquierda -->
+            <div class="col-md-6 center-vertical">
+                <h2>Osber Rioja Lopez</h2>
+                <p>Estudiante de Ingenieria de Sistemas en la universidad Catolica Boliviana "San Pablo" Regional Cochabamba. 
+                    Aficionado a hacer paginas Web con html, css y JavaScript. Me gusta la música y los deportes, en especial el futbol.
+                </p>
+            </div>
+            <!-- Columna Derecha -->
+            <div class="col-md-6 center-image">
+                <img src="me.png" alt="Foto de Osber Rioja Lopez" class="img-fluid rounded-circle" style="max-width: 300px;">
+            </div>
+        </div>
+        <!-- Puedes agregar más contenido según sea necesario -->
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="habilidades" class="container mt-5 text-center">
+        <h2>Habilidades</h2>
+        <div class="row">
+            <!-- Primera Fila -->
+            <div class="col-md-6 center-image">
+                <img src="habilidad1.png" alt="CSS" class="img-fluid" style="max-width: 150px;">
+            </div>
+            <div class="col-md-6 center-vertical">
+                <h3>HTML</h3>
+                <p>El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una página web y sus contenidos. Por ejemplo, sus contenidos podrían ser párrafos, una lista con viñetas, o imágenes y tablas de datos.</p>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <!-- Segunda Fila -->
+            <div class="col-md-6 center-image">
+                <img src="habilidad2.png" alt="HTML" class="img-fluid" style="max-width: 150px;">
+            </div>
+            <div class="col-md-6 center-vertical">
+                <h3>CSS</h3>
+                <p>CSS son las siglas de “Cascading Style Sheets” (hojas de estilo en cascada). CSS es un lenguaje para la composición y estructuración de páginas web (HTML o XML). Este lenguaje contiene elementos de codificación y se compone de estas “Cascading Style Sheets” que también se llaman archivos CSS (. css).</p>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <!-- Tercera Fila -->
+            <div class="col-md-6 center-image">
+                <img src="habilidad3.png" alt="JavaScript" class="img-fluid" style="max-width: 150px;">
+            </div>
+            <div class="col-md-6 center-vertical">
+                <h3>JavaScript</h3>
+                <p>JavaScript es un lenguaje de programación que los desarrolladores utilizan para hacer páginas web interactivas. Desde actualizar fuentes de redes sociales a mostrar animaciones y mapas interactivos, las funciones de JavaScript pueden mejorar la experiencia del usuario de un sitio web.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Portafolio -->
+    <section id="portfolio" class="container mt-5 text-center">
+        <h2>Portafolio</h2>
+        <div class="row">
+            <!-- Primer Elemento -->
+            <div class="col-md-4">
+                <img src="portafolio1.jpg" alt="Proyecto 1" class="img-fluid">
+                <h3>Aviadores</h3>
+                <p>Pagina hecha en la materia de TecWeb</p>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#modalProyecto1">Ver</button>
+            </div>
+            <!-- Segundo Elemento -->
+            <div class="col-md-4">
+                <img src="portafolio2.jpg" alt="Proyecto 2" class="img-fluid">
+                <h3>Juego de Memoria</h3>
+                <p>Juego web hecho para la materia de matematicas Discretas.</p>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#modalProyecto2">Ver</button>
+            </div>
+            <!-- Tercer Elemento -->
+            <div class="col-md-4">
+                <img src="portafolio3.jpg" alt="Proyecto 3" class="img-fluid">
+                <h3>TDDLab</h3>
+                <p>Proyecto para taller de desarrollo de software</p>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#modalProyecto3">Ver</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modales para cada proyecto -->
+    <div class="modal fade" id="modalProyecto1" tabindex="-1" role="dialog" aria-labelledby="modalProyecto1Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProyecto1Label">Pagina Aviadores</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contenido del modal para el Proyecto 1 -->
+                    <p>Pagina Web con informacion del Equipo Wilstermann de Cochabamba</p>
+                    <a href="https://delicate-rolypoly-21b29a.netlify.app/" target="_blank">Visita la pagina</a>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProyecto2" tabindex="-1" role="dialog" aria-labelledby="modalProyecto2Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProyecto2Label">Juego Web</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contenido del modal para el Proyecto 2 -->
+                    <p>Este juego consiste en destapar todas las casillas para ganar el juego, las casillas contienen equivalencias logicas.</p>
+                    <a href="https://soft-semolina-a13025.netlify.app/" target="_blank">Juega Aqui</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProyecto3" tabindex="-1" role="dialog" aria-labelledby="modalProyecto3Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProyecto3Label">TDDLab</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contenido del modal para el Proyecto 3 -->
+                    <p>Actualmente me encuentro trabajando en este proyecto, para ayudar a estudiantes y docente de la materia de Ingenieria de Software, es una herramienta para ayudar en el proceso de aprendizaje de TDD</p>
+                    <a href="https://tddlab-hosting-firebase.web.app/" target="_blank">visita la app</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="container mt-5 text-center">
+        <h2>Servicios</h2>
+        <div class="row">
+            <!-- Primer Servicio -->
+            <div class="col-md-4">
+                <img src="servicio1.jpg" alt="Servicio 1" class="img-fluid" width="250px" height="150px">
+                <h3>Desarrollo de Páginas Web</h3>
+                <p>Servicio de desarrollo de paginas web</p>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#modalServicio1">Ver</button>
+            </div>
+            <!-- Segundo Servicio -->
+            <div class="col-md-4">
+                <img src="servicio2.jpg" alt="Servicio 2" class="img-fluid" width="250px" height="150px">
+                <h3>Desarrollo de aplicaciones</h3>
+                <p>servicio de desarrollo de aplicaciones</p>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#modalServicio2">Ver</button>
+            </div>
+            <!-- Tercer Servicio -->
+            <div class="col-md-4">
+                <img src="servicio3.jpg" alt="Servicio 3" class="img-fluid" width="250px" height="150px">
+                <h3>Mantenimiento</h3>
+                <p>Servicio de mantemiento de sistemas</p>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#modalServicio3">Ver</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modales para cada servicio -->
+    <div class="modal fade" id="modalServicio1" tabindex="-1" role="dialog" aria-labelledby="modalServicio1Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalServicio1Label">Servicio 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contenido del modal para el Servicio 1 -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac risus ligula.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalServicio2" tabindex="-1" role="dialog" aria-labelledby="modalServicio2Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalServicio2Label">Servicio 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contenido del modal para el Servicio 2 -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac risus ligula.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalServicio3" tabindex="-1" role="dialog" aria-labelledby="modalServicio3Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalServicio3Label">Servicio 3</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contenido del modal para el Servicio 3 -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac risus ligula.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="container mt-5">
+        <h2>Contacto</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Correo Electrónico">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="asunto">Asunto</label>
+                <input type="text" class="form-control" id="asunto" placeholder="Asunto">
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="4" placeholder="Mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="container-fluid text-center bg-dark text-light p-3 mt-5">
+        <p>&copy; 2024 Mi Portafolio</p>
+    </footer>
+
+    <!-- Scripts de Bootstrap y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        // Función para cambiar el tema y el fondo
+        function cambiarTema() {
+            // Cambiar el fondo a gris
+            document.body.style.backgroundColor = '#1a1b1c';
+    
+            // Puedes agregar más estilos de tema oscuro según tus preferencias
+            // Aquí estoy cambiando el color del texto a blanco como ejemplo
+            document.body.style.color = 'white';
+    
+            // Cambia el color de fondo del botón a oscuro
+            document.getElementById('cambiarTemaBtn').classList.remove('btn-light');
+            document.getElementById('cambiarTemaBtn').classList.add('btn-dark');
+        }
+    
+        // Asigna la función al evento click del botón
+        document.getElementById('cambiarTemaBtn').addEventListener('click', cambiarTema);
+    </script>
+
+</body>
+</html>
